@@ -1,0 +1,209 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-color: rgb(186, 180, 180); */
+}
+/* Navbar preparation */
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: " ";
+    background: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+.logo>img{
+    width: 51px;
+    height: 46px;
+    border-radius: 50px;
+    margin: 1px 8px;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 23px;
+    border-radius: 15px;
+    /* background-color: black; */
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Section head */
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    height: 350px;
+    margin-bottom: 115px;
+}
+.home::before{
+    content: "";
+    background: url(./pexels-valeria-boltneva-1639556.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+    opacity: 1.5;
+}
+.home h2{
+    color: white;
+    text-align: center;
+}
+.home p{
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+/* Utility class */
+#heading{
+    font-size: rem;
+    padding: 12px;
+}
+.btn{
+    padding: 4px 19px;
+    margin: 19px 19px;
+    color: white;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition-property: backgroun-color;
+    transition-duration: 1s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 23px;
+}
+.services-containor{
+    margin: 5px 5px;
+}
+.services-containor .heading{
+    color: black;
+}
+.heading{
+    font-size: 2.5rem;
+    color: white;
+}
+.center{
+    text-align: center;
+}
+#services{
+    display: flex;
+    margin: 7px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#services .box img{
+    height: 88px;
+    border-radius: 34px;
+    display: block;
+    margin: auto;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 14px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(235, 220, 220);
+    
+}
+/* clients-section */
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+    content: "";
+    background: url(./backg.jpeg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.5;
+    height: 344px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item img{
+    width: 100px;
+}
+.client-item{
+    padding: 40px 50px;
+    margin: 5px 5px;
+}
+/* form-section */
+#contact{
+height: 650px;
+position: relative;
+}
+#contact::before{
+    content: "";
+    background: url(./contact.jpeg) no-repeat center center/cover;
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    z-index: -1;
+    opacity: .7;
+}
+#contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+    border-radius: 7px;
+
+}
+#contact-box form{
+    width: 50%;
+    padding-top: 75px;
+}
+#contact-box label{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#contact .heading{
+    padding-top: 55px;
+    color: black;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 25px;
+    text-align: center;
+    margin-top: -65px;
+}
